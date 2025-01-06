@@ -2,6 +2,7 @@ mod data_type;
 mod control_flow;
 mod loop_;
 mod ownership;
+mod common_collection;
 fn main() {
 
     println!("Hello, Tarzoozoo!");
@@ -26,5 +27,10 @@ fn main() {
     ownership::owner_fn();
     ownership::borrow_fn();
     ownership::reference_fn();
+
+    // --------------------------------------------
+    common_collection::vector_fn();
+    common_collection::string_fn();
+    common_collection::hash_map_fn();
 }
 
