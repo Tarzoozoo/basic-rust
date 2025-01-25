@@ -1,7 +1,8 @@
 pub fn loop_fn() {
+
+    println!("----------------------------------> Loop");
     let mut c = 0;
-    
-    println!("-----------------------------------------------------");
+
     loop {
         c += 1;
         println!("Count is: {}", c);
@@ -14,9 +15,10 @@ pub fn loop_fn() {
 }
 
 pub fn while_fn() {
+    
+    println!("----------------------------------> While loop");
     let mut number = 3;
 
-    println!("-----------------------------------------------------");
     while number != 0 {
         println!("Counting down: {}", number);
         number -= 1;
@@ -25,7 +27,8 @@ pub fn while_fn() {
 }
 
 pub fn for_fn() {
-    println!("-----------------------------------------------------");
+
+    println!("----------------------------------> For loop");
     for num in 1..=5 {
         println!("For loop: {}", num);
     }

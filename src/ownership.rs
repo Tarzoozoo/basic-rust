@@ -1,6 +1,6 @@
 pub fn owner_fn() {
-    println!("------------------------ Onwership -----------------------------");
-
+    
+    println!("----------------------------------> Ownership");
     let s1 = String::from("Hello");
     let s2 = s1;  // s1 ถูกย้ายไปยัง s2
 
@@ -17,8 +17,8 @@ fn print_string(input: String) {
 }
 
 pub fn borrow_fn() {
-    println!("------------------------ Borrowing -----------------------------");
 
+    println!("----------------------------------> Borrowing");
     // ------------------- ยืมแบบอ่าน -----------------------
     let s1 = String::from("Hello");
     let len = calculate_length(&s1);  // ยืม s1 แต่ไม่ได้ย้าย
@@ -40,8 +40,8 @@ fn calculate_length_mut(s: &mut String) -> usize {
 }
 
 pub fn reference_fn() {
-    println!("------------------------ Reference -----------------------------");
 
+    println!("----------------------------------> Refferences");
     let s = String::from("Hello");
     let r1 = &s;  // immutable reference
     let r2 = &s;  // immutable reference

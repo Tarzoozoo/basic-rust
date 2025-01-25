@@ -1,8 +1,8 @@
-// ------------------------ Vector -----------------------------
+
 // Vector = Dynamic Array
 pub fn vector_fn() {
-    println!("------------------------ Vector -----------------------------");
-
+    
+    println!("----------------------------------> Vector");
     // 1. Create the Vector
     // สร้าง Vector เปล่า
     let mut number: Vec<i32> = Vec::new();
@@ -47,11 +47,11 @@ pub fn vector_fn() {
 
 }
 
-// ------------------------ String -----------------------------
+
 // String = ข้อความที่แก้ได้
 pub fn string_fn() {
-    println!("------------------------ String -----------------------------");
 
+    println!("----------------------------------> String");
     // Create the String
     let mut greeting = String::new();
     greeting.push_str("Hello");
@@ -93,12 +93,12 @@ pub fn string_fn() {
     println!("{}", string_back_to_str);
 }
 
-// ------------------------ Hash map -----------------------------
+
 // รูปแบบของ Dict ที่เก็บเป็น Key-Value
 use std::collections::HashMap;
 pub fn hash_map_fn() {
-    println!("------------------------ Hash map -----------------------------");
 
+    println!("----------------------------------> Hashmap");
     // สร้าง HashMap และเพิ่มข้อมูล
     let mut scores = HashMap::new();
     scores.insert("Alice", 50);

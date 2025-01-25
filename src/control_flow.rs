@@ -7,6 +7,5 @@ pub fn match_fn() {
         3 => "three",
         _ => "other"
     };
-    println!("-----------------------------------------------------");
     println!("The result is: {}", result);
 }
