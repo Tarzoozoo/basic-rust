@@ -11,6 +11,7 @@ mod smart_pointers;
 mod thread;
 mod thread_x_smartptr;
 mod asyncro;
+mod std_lib;
 
 fn main() {
 
@@ -83,5 +84,35 @@ fn main() {
     println!("");
     println!("#################################### Asyncronous ####################################");
     asyncro::async_fn();
+
+
+    println!("");
+    println!("#################################### Standard Library ####################################");
+    std_lib::print_debug(42);             // Output: 42
+    std_lib::print_debug("Hello, Rust!"); // Output: "Hello, Rust!"
+
+    let text = String::from("Rust");
+    let (a, b) = std_lib::duplicate(text.clone());
+    println!("{} and {}", a, b); // Output: Rust and Rust
+
+    println!("{}", std_lib::are_equal(5, 5));         // Output: true
+    println!("{}", std_lib::are_equal("Rust", "Go")); // Output: false
+
+    println!("{}", std_lib::compare_values(5, 10)); // Output: a is less than b
+    println!("{}", std_lib::compare_values(20, 10)); // Output: a is greater than b
+
+
+    let numbers = vec![1, 2, 2, 3, 4, 4];
+    let unique_numbers = std_lib::unique_items(numbers);
+    println!("{:?}", unique_numbers); // Output: {1, 2, 3, 4}
+
+
+    let int_sum = std_lib::add(5, 10);         // บวกจำนวนเต็ม
+    let float_sum = std_lib::add(5.5, 10.5);  // บวกทศนิยม
+    println!("Integer sum: {}", int_sum);
+    println!("Float sum: {}", float_sum);
+
+    let vec = vec![10, 10, 10, 10];
+    std_lib::sum_values(vec);
 }
 
